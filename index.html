@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery-animated-headlines-master</title>
+    <link rel="stylesheet" href="./dist/css/jquery.animatedheadline.css">
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            justify-content: center;
+        }
+        
+        .selector h1 {
+            font-size: 50px;
+        }
+        
+        .selector h1 b i {
+            font-style: normal;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="selector" style="display: flex; justify-content: center; text-align: center;">
+        <h1 class="ah-headline" style="text-align: center;">
+            <span>I Am </span>
+            <span class="ah-words-wrapper">
+                <b class="is-visible">Sajib</b>
+                <b >Fornt-end Devalopar</b>
+                <b>Web Designer</b>
+                
+            </span>
+        </h1>
+    </div>
+
+
+    <script src="./dist/js/jquery-3.6.0.min.js"></script>
+    <script src="dist/js/jquery.animatedheadline.min.js"></script>
+    <script>
+        $(function() {
+            $('.selector').animatedHeadline({
+                animationType: 'scale'
+            });
+        })
+    </script>
+
+
+
+
+</body>
+
+
+
+</html>
